@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    color: white;
+
+    /* outline: dashed red 1px; */
+}
+body{
+    background-color: rgb(32,33,36);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: start;
+    
+    font-family: 'Roboto', sans-serif;
+
+    gap: 10px;
+}
+.input_patinhos{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    
+}
+.input_patinhos label{
+    font-size: 12px;
+    color: rgb(217, 104, 104);
+}
+.input_patinhos > input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:#49494a;
+}
+::placeholder{
+    color: gray;
+}
+form button{
+    padding: 5px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: #2f3b4e;    
+    transition: 0.3s;
+}
+form button:hover{
+    color: #2f3b4e;
+    background-color: white;
+}
+section{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+section *{
+    width: 100%;
+}
+section h2,h3{
+    margin: 20px 0px;
+}
+section p {
+    margin: 10px 0px;
+    font-size: 12px;
+}

@@ -1,0 +1,30 @@
+{% extends 'foram_passear/layout.html' %}
+
+{% block body %}
+
+    <form action="{% url 'foram_passear:gerador' %}" method="GET">
+        {% csrf_token %}
+        <div class="input_patinhos">
+            <input type="number" name="patinhos" id="" placeholder="Número de patinhos">
+            <label for="patinhos">
+                {% if message %}
+                    {{ message }}
+                {% endif %}
+            </label>
+        </div>
+        <button type="submit">Gerar letra</button>
+    </form>
+    
+    <section id="letra">
+        {% if letra %}
+            <h2>{{n_patinhos}} patinhos</h2>
+            <h3>Letra</h3>
+            <p>
+                
+                    {{ letra|safe }}
+                
+            </p>
+        {% endif %}
+    </section>
+
+{% endblock%}
